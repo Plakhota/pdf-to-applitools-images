@@ -20,10 +20,10 @@ namespace ApplitoolsTutorial
             eyes = new Eyes();
            
             // Start the session and set app name and test name.
-            eyes.Open("Applitools site", "Screenshot test!");
+            eyes.Open("Demo App - Images C#", "Smoke Test - Images C#");
 
             // Load page image and validate.
-            Bitmap bitmap = GetImage(new Uri("https://applitools.com/tutorials/applitools.jpg"));
+            Bitmap bitmap = GetImage(new Uri("https://i.ibb.co/bJgzfb3/applitools.png"));
 
             // Visual checkpoint.
             eyes.CheckImage(bitmap);
